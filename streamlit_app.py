@@ -33,5 +33,5 @@ with st.echo(code_location='below'):
         y = radius * math.sin(angle)
         data.append(Point(x, y))
 
-    st.line_chart(alt.Chart(pd.DataFrame(data), height=500, width=500)
+    st.line_chart(alt.Chart(pd.DataFrame(data), height=500, width=500, use_container_width=True)
    
